@@ -73,7 +73,6 @@ const Slick = () => {
           onClick={() => handleItemClick("1")}
           className="bg-[#ffffff] w-[14.375rem] h-[2.9375rem] shadow-2xl flex items-center justify-center cursor-pointer"
           style={{
-            boxShadow: "12px 18px 24px 0px #00000040",
             borderBottom: selected === "1" ? "5px solid #816A3D" : "none",
           }}
         >
@@ -83,7 +82,6 @@ const Slick = () => {
           onClick={() => handleItemClick("2")}
           className="bg-[#ffffff] w-[14.375rem] h-[2.9375rem] shadow-2xl flex items-center justify-center cursor-pointer"
           style={{
-            boxShadow: "12px 18px 24px 0px #00000040",
             borderBottom: selected === "2" ? "5px solid #816A3D" : "none",
           }}
         >
@@ -93,7 +91,6 @@ const Slick = () => {
           onClick={() => handleItemClick("3")}
           className="bg-[#ffffff] w-[14.375rem] h-[2.9375rem] shadow-2xl flex items-center justify-center cursor-pointer"
           style={{
-            boxShadow: "12px 18px 24px 0px #00000040",
             borderBottom: selected === "3" ? "5px solid #816A3D" : "none",
           }}
         >
@@ -103,7 +100,6 @@ const Slick = () => {
           onClick={() => handleItemClick("4")}
           className="bg-[#ffffff] w-[14.375rem] h-[2.9375rem] shadow-2xl flex items-center justify-center cursor-pointer"
           style={{
-            boxShadow: "12px 18px 24px 0px #00000040",
             borderBottom: selected === "4" ? "5px solid #816A3D" : "none",
           }}
         >
@@ -111,30 +107,29 @@ const Slick = () => {
         </div>
       </div>
       {selected === "1" && (
-        <div className="w-[62.1875rem] container max-md:w-full m-auto mt-[0.618125rem]">
-          <Slider {...settings}>
-            <div className="w-[62.1875rem] h-[41.875rem] bg-[#ffffff] flex items-center flex-col justify-center max-md:h-[19.18rem] max-md:w-[19.88rem]">
+        <div className="w-[62.1875rem] h-[41.875rem] container max-md:w-full m-auto mt-[0.618125rem] bg-[#ffffff] flex items-center">
+          {/* <img
+            className=" m-auto w-[57.6625rem] h-[38.875rem] rounded-2xl mt-[1.5rem] max-md:h-[19.18rem] max-md:w-[19.88rem] max-md:mt-[0rem] object-cover"
+            src="https://res.cloudinary.com/drjnmxyd5/image/upload/v1678099548/unsplash_IyaNci0CyRk_hsopcc.svg"
+            alt=""
+          /> */}
+          <div
+            className="flex items-center justify-center m-auto w-[57.6625rem] h-[38.875rem] rounded-2xl mt-[1.5rem] max-md:h-[19.18rem] max-md:w-[19.88rem] max-md:mt-[0rem] object-cover"
+            style={{
+              backgroundImage:
+                "url('https://res.cloudinary.com/drjnmxyd5/image/upload/v1678099548/unsplash_IyaNci0CyRk_hsopcc.svg')",
+            }}
+          >
+            <div>
               <img
-                className="m-auto w-[57.6625rem] h-[38.875rem] rounded-2xl mt-[1.5rem] max-md:h-[19.18rem] max-md:w-[19.88rem] max-md:mt-[0rem] object-cover"
-                src="https://res.cloudinary.com/drjnmxyd5/image/upload/v1677753837/WhatsApp_Image_2023-03-01_at_15.45_3_xo39ya.png"
+                src="https://res.cloudinary.com/drjnmxyd5/image/upload/v1678100047/vscode-icons_file-type-pdf2_rkqknf.svg"
                 alt=""
               />
+              <button className="w-[13.899375rem] h-[2.0725rem] bg-[#ffffff] text-[#000000] font-poppins">
+                Download Brochure Pdf
+              </button>
             </div>
-            <div className="w-[62.1875rem] h-[41.875rem] bg-[#ffffff] flex items-center flex-col justify-center max-md:h-[19.18rem] max-md:w-[19.88rem]">
-              <img
-                className="m-auto w-[57.6625rem] h-[38.875rem] rounded-2xl mt-[1.5rem] max-md:h-[19.18rem] max-md:w-[19.88rem] max-md:mt-[0rem] object-cover"
-                src="https://res.cloudinary.com/drjnmxyd5/image/upload/v1677506577/Indoor_Game_02-1_1_e1hbzs.svg"
-                alt=""
-              />
-            </div>
-            <div className="w-[62.1875rem] h-[41.875rem] bg-[#ffffff] flex items-center flex-col justify-center max-md:h-[19.18rem] max-md:w-[19.88rem]">
-              <img
-                className="m-auto w-[57.6625rem] h-[38.875rem] rounded-2xl mt-[1.5rem] max-md:h-[19.18rem] max-md:w-[19.88rem] max-md:mt-[0rem] object-cover"
-                src="https://res.cloudinary.com/drjnmxyd5/image/upload/v1677506607/Frame_32947_o5vgbg.svg"
-                alt=""
-              />
-            </div>
-          </Slider>
+          </div>
         </div>
       )}
       {selected === "2" && (
@@ -143,7 +138,7 @@ const Slick = () => {
             <div className="w-[62.1875rem] h-[41.875rem] bg-[#ffffff] flex items-center flex-col justify-center max-md:h-[19.18rem] max-md:w-[19.88rem]">
               <img
                 className="m-auto w-[57.6625rem] h-[38.875rem] rounded-2xl mt-[1.5rem] max-md:h-[19.18rem] max-md:w-[19.88rem] max-md:mt-[0rem] object-cover"
-                src="https://res.cloudinary.com/drjnmxyd5/image/upload/v1677753947/unsplash_IyaNci0CyRk_1_mbp06u.png"
+                src="https://res.cloudinary.com/drjnmxyd5/image/upload/v1678100858/WhatsApp_Image_2023-03-01_at_15.45_3_gw5tgc.svg"
                 alt=""
               />
             </div>
@@ -170,7 +165,7 @@ const Slick = () => {
             <div className="w-[62.1875rem] h-[41.875rem] bg-[#ffffff] flex items-center flex-col justify-center max-md:h-[19.18rem] max-md:w-[19.88rem]">
               <img
                 className="m-auto w-[57.6625rem] h-[38.875rem] rounded-2xl mt-[1.5rem] max-md:h-[19.18rem] max-md:w-[19.88rem] max-md:mt-[0rem] object-cover"
-                src="https://res.cloudinary.com/drjnmxyd5/image/upload/v1677753968/unsplash_IyaNci0CyRk_2_r7kpfl.png"
+                src="https://res.cloudinary.com/drjnmxyd5/image/upload/v1677753947/unsplash_IyaNci0CyRk_1_mbp06u.png"
                 alt=""
               />
             </div>
@@ -197,7 +192,7 @@ const Slick = () => {
             <div className="w-[62.1875rem] h-[41.875rem] bg-[#ffffff] flex items-center flex-col justify-center max-md:h-[19.18rem] max-md:w-[19.88rem]">
               <img
                 className="m-auto w-[57.6625rem] h-[38.875rem] rounded-2xl mt-[1.5rem] max-md:h-[19.18rem] max-md:w-[19.88rem] max-md:mt-[0rem] object-cover"
-                src="https://res.cloudinary.com/drjnmxyd5/image/upload/v1677753974/unsplash_IyaNci0CyRk_3_prr74f.png"
+                src="https://res.cloudinary.com/drjnmxyd5/image/upload/v1678100879/Balewadi-Google-Maps_1_stb3si.svg"
                 alt=""
               />
             </div>

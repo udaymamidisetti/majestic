@@ -23,7 +23,7 @@ const Overview = () => {
   return (
     <>
       <div
-        className="h-[35.375rem] bg-cover max-md:h-[46.329375rem]"
+        className="h-[35.375rem] bg-cover max-md:h-[36.329375rem]"
         // style={{
         //   backgroundImage:
         //     "url(https://res.cloudinary.com/drjnmxyd5/image/upload/v1677249796/img-1_1_zbn9ep.png)",
@@ -58,31 +58,31 @@ const Overview = () => {
                 Location
               </p>
               <p className="text-[#ffffff] text-[1.125rem] h-[2.93125rem] w-[18.75rem] text-center justify-center border flex items-center">
-                Pune
+                Balewadi
               </p>
             </div>
-            <div>
+            {/* <div>
               <p className="font-poppins text-[#ffffff] w-[18.75rem] text-center">
                 Unit Type
               </p>
               <p className="text-[#ffffff] text-[1.125rem] h-[2.93125rem] w-[18.75rem] text-center justify-center border flex items-center">
                 2 BHK ,3BHK
               </p>
-            </div>
-            <div>
+            </div> */}
+            {/* <div>
               <p className="font-poppins text-[#ffffff] w-[18.75rem] text-center">
                 Carpet
               </p>
               <p className="text-[#ffffff] text-[1.125rem] h-[2.93125rem] w-[18.75rem] text-center justify-center border flex items-center">
                 880-1120 Sq .ft
               </p>
-            </div>
+            </div> */}
             <div>
               <p className="font-poppins text-[#ffffff] w-[18.75rem] text-center">
                 Total Flats
               </p>
               <p className="text-[#ffffff] text-[1.125rem] h-[2.93125rem] w-[18.75rem] text-center justify-center border flex items-center">
-                1234
+                260
               </p>
             </div>
             <div>
@@ -90,7 +90,7 @@ const Overview = () => {
                 Total Area
               </p>
               <p className="text-[#ffffff] text-[1.125rem] h-[2.93125rem] w-[18.75rem] text-center justify-center border flex items-center">
-                11.10 Acres
+                2.5 Acres
               </p>
             </div>
             <div>
@@ -98,7 +98,7 @@ const Overview = () => {
                 Bulding and Floors
               </p>
               <p className="text-[#ffffff] text-[1.125rem] h-[2.93125rem] w-[18.75rem] text-center justify-center border flex items-center">
-                4 Towers p+ 15 Floors
+                2 Tower & 7+37 Floor
               </p>
             </div>
           </div>

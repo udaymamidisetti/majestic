@@ -4,7 +4,75 @@ const About = () => {
   return (
     <div>
       <div className="container mt-[14.283125rem] w-full lg:h-auto max-w-[62.5rem] mx-auto max-md:mt-[0rem]">
-        <h1 className="text-center font-bold text-[2rem] text-[#816A3D] font-poppins">
+        <div
+          className="container w-full max-w-[62.5rem] max-md:h-auto mx-auto bg-[#A58850] bg-cover h-auto pb-[2.4125rem] left-0 right-0 bottom-[-30rem] max-md:bottom-[-9rem]"
+          style={{ boxShadow: "8px 8px 22px 0px #00000040" }}
+        >
+          <h1 className="mt-[1.3275rem] text-[2rem] text-[#ffffff] font-semibold font-poppins text-center">
+            COSTING
+          </h1>
+          <div className="flex justify-evenly items-center max-md:flex-col">
+            <div>
+              <table
+                className="border max-w-[34.3125rem] w-full font-poppins overflow-hidden"
+                style={{ borderCollapse: "collapse" }}
+              >
+                <tr className="h-[2.9375rem] border text-[1rem]">
+                  <th className="w-[6rem] font-medium text-[#ffffff] border">
+                    Type
+                  </th>
+                  <th className="w-[12.25rem] text-center font-medium text-[#ffffff] border">
+                    Carpet Area
+                  </th>
+                  <th className="w-[16.0625rem] font-medium text-[#ffffff] border">
+                    Price
+                  </th>
+                </tr>
+                <tr className="h-[5.515rem] border text-[#ffffff]">
+                  <td className="text-center border ">2BHK</td>
+                  <td className="text-center border">821 Sq.ft.</td>
+                  <td className="text-center border">
+                    ₹ 1.14 cr * All Inc. <br />
+                    <span>
+                      <button className="w-[8.125rem] h-[2.125rem] bg-[#ffffff] text-[#A58850] text-[1rem] cursor-pointer">
+                        Price BreakUp
+                      </button>
+                    </span>
+                  </td>
+                </tr>
+                <tr className="h-[5.515rem] border text-[#ffffff]">
+                  <td className="text-center border">3BHK</td>
+                  <td className="text-center border">1231 Sq. ft.</td>
+                  <td className="text-center border">
+                    ₹ 1.67Cr * All Inc.
+                    <br />
+                    <span>
+                      <button className="w-[8.125rem] h-[2.125rem] bg-[#ffffff] text-[#A58850] text-[1rem] cursor-pointer">
+                        Price BreakUp
+                      </button>
+                    </span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div className="max-md:mt-[2rem]">
+              <img
+                src="https://res.cloudinary.com/drjnmxyd5/image/upload/v1678096007/costing-details_1_scc5fs.svg"
+                alt=""
+              />
+              <button className="mt-[1.10875rem] flex items-center justify-center w-[20.4375rem] h-[2.5rem] bg-[#ffffff] text-[#A58850] text-[1rem] cursor-pointer">
+                <p>Download Cost sheet </p>
+
+                <img
+                  className="pt-[3px] pl-[0.78625rem]"
+                  src="https://res.cloudinary.com/drjnmxyd5/image/upload/v1678096089/Vector_7_p8vsct.svg"
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+        <h1 className="text-center font-bold text-[2rem] text-[#816A3D] font-poppins mt-[3.80875rem]">
           ABOUT PROJECT
         </h1>
         <p className=" mt-[0.99625rem] text-center font-poppins text-[1.125rem] font-medium">

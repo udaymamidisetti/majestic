@@ -10,7 +10,7 @@ const Aminities = () => {
         <div className=" w-full flex justify-center items-center gap-[1.625rem] mt-[0.875rem] max-md:flex-col">
           <img
             className="rounded-xl h-[23.25rem] w-[29rem]"
-            src="https://res.cloudinary.com/drjnmxyd5/image/upload/v1677751653/WhatsApp_Image_2023-03-01_at_15.45_1_yujjri.png"
+            src="https://res.cloudinary.com/drjnmxyd5/image/upload/v1678097768/WhatsApp_Image_2023-03-01_at_15.45_1_dmmf0c.svg"
             alt=""
           />
           <div className="max-w-[31.875rem] w-full">
@@ -18,11 +18,23 @@ const Aminities = () => {
               id="country"
               name="country"
               autoComplete="country-name"
-              className="pl-[0.625rem] pr-[0.625rem] w-full text-[#ffffff] text-[1.25rem] font-poppins font-medium mt-1 block max-w-[31.875rem] h-[3.75rem] bg-[#A58850] border-gray-900 py-2 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500"
+              className="pl-[0.625rem] pr-[0.625rem] w-full text-[#ffffff] text-[1.25rem] font-poppins font-medium mt-1 block max-w-[31.875rem] h-[3.75rem] bg-[#A58850] border-gray-900 py-2 px-3 shadow-sm focus:outline-none"
             >
-              <option className="text-[#ffffff]">Environs For Kid</option>
-              <option></option>
-              <option></option>
+              <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
+                Environs For Kid
+              </option>
+              <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
+                Half Basketball Court
+              </option>
+              <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
+                Kids Play Area
+              </option>
+              <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
+                Infinity Pool
+              </option>
+              <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff]">
+                Skating Rink
+              </option>
             </select>
             <select
               id="country"
@@ -31,8 +43,18 @@ const Aminities = () => {
               className="pl-[0.625rem] pr-[0.625rem] w-full text-[#ffffff] text-[1.25rem] font-poppins font-medium mt-1 block max-w-[31.875rem] h-[3.75rem] bg-[#A58850] border-gray-900 py-2 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500"
             >
               <option className="text-[#ffffff]">Environs For Old Age</option>
-              <option></option>
-              <option></option>
+              <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
+                Grandparents Corner{" "}
+              </option>
+              <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
+                Meditation Garden
+              </option>
+              <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
+                Yoga Deck
+              </option>
+              <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
+                Walking Track
+              </option>
             </select>
             <select
               id="country"
@@ -41,8 +63,18 @@ const Aminities = () => {
               className="pl-[0.625rem] pr-[0.625rem] w-full text-[#ffffff] text-[1.25rem] font-poppins font-medium mt-1 block max-w-[31.875rem] h-[3.75rem] bg-[#A58850] border-gray-900 py-2 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500"
             >
               <option className="text-[#ffffff]">Luxury Environs</option>
-              <option></option>
-              <option></option>
+              <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
+                Party Hall
+              </option>
+              <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
+                Party Deck with Open Serving Counter
+              </option>
+              <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
+                Spillover Deck with Seating
+              </option>
+              <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
+                Lawn Area
+              </option>
             </select>
             <select
               id="country"
@@ -51,8 +83,18 @@ const Aminities = () => {
               className="pl-[0.625rem] pr-[0.625rem] w-full text-[#ffffff] text-[1.25rem] font-poppins font-medium mt-1 block max-w-[31.875rem] h-[3.75rem] bg-[#A58850] border-gray-900 py-2 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500"
             >
               <option className="text-[#ffffff]">Nature Environs</option>
-              <option></option>
-              <option></option>
+              <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
+                Boardwalk
+              </option>
+              <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
+                Hammock Garden
+              </option>
+              <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
+                Butterfly Garden
+              </option>
+              <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border">
+                Boardwalk
+              </option>
             </select>
             <select
               id="country"
@@ -61,8 +103,18 @@ const Aminities = () => {
               className="pl-[0.625rem] pr-[0.625rem] w-full text-[#ffffff] text-[1.25rem] font-poppins font-medium mt-1 block max-w-[31.875rem] h-[3.75rem] bg-[#A58850] border-gray-900 py-2 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500"
             >
               <option className="text-[#ffffff]">Overall Environs</option>
-              <option></option>
-              <option></option>
+              <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
+                Party Hall
+              </option>
+              <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
+                Yoga Lawn
+              </option>
+              <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
+                Gym
+              </option>
+              <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
+                Cafe
+              </option>
             </select>
           </div>
         </div>

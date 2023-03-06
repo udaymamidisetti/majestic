@@ -50,9 +50,9 @@ const Luxury = () => {
   return (
     <div>
       <Slider {...settings}>
-        <div className="bg-cover h-[64.3rem] flex flex-col items-center justify-center w-screen bg-center">
+        <div className="bg-cover h-[64.3rem] flex flex-col items-center justify-center w-screen bg-center max-md:h-[40rem]">
           <img
-            className="h-[64.3rem] w-screen absolute"
+            className="h-[64.3rem] w-screen absolute max-md:h-[40rem]"
             src="https://res.cloudinary.com/drjnmxyd5/image/upload/v1677750121/WhatsApp_Image_2023-03-01_at_4.05_4_rujwke.png"
             alt=""
           />
@@ -61,7 +61,7 @@ const Luxury = () => {
             style={{ backgroundColor: "#000000" }}
           >
             <div
-              className="w-[10rem] flex items-center justify-center h-[3.1875rem]"
+              className="w-[10rem] flex items-center justify-center h-[3.1875rem] rounded-md"
               style={{ backgroundColor: "#000000" }}
             >
               <img
@@ -75,9 +75,9 @@ const Luxury = () => {
             </div>
           </div>
         </div>
-        <div className="bg-cover h-[64.3rem] flex flex-col items-center justify-center w-screen bg-center">
+        <div className="bg-cover h-[64.3rem] flex flex-col items-center justify-center w-screen bg-center max-md:h-[40rem]">
           <img
-            className="h-[64.3rem] w-screen absolute"
+            className="h-[64.3rem] w-screen absolute max-md:h-[40rem]"
             src="https://res.cloudinary.com/drjnmxyd5/image/upload/v1677750121/WhatsApp_Image_2023-03-01_at_4.05_4_rujwke.png"
             alt=""
           />
@@ -86,7 +86,7 @@ const Luxury = () => {
             style={{ backgroundColor: "#000000" }}
           >
             <div
-              className="w-[10rem] flex items-center justify-center h-[3.1875rem]"
+              className="w-[10rem] flex items-center justify-center h-[3.1875rem] rounded-md"
               style={{ backgroundColor: "#000000" }}
             >
               <img
@@ -100,9 +100,9 @@ const Luxury = () => {
             </div>
           </div>
         </div>
-        <div className="bg-cover h-[64.3rem] flex flex-col items-center justify-center w-screen bg-center">
+        <div className="bg-cover h-[64.3rem] flex flex-col items-center justify-center w-screen bg-center max-md:h-[40rem]">
           <img
-            className="h-[64.3rem] w-screen absolute"
+            className="h-[64.3rem] w-screen absolute max-md:h-[40rem]"
             src="https://res.cloudinary.com/drjnmxyd5/image/upload/v1677750121/WhatsApp_Image_2023-03-01_at_4.05_4_rujwke.png"
             alt=""
           />
@@ -111,7 +111,7 @@ const Luxury = () => {
             style={{ backgroundColor: "#000000" }}
           >
             <div
-              className="w-[10rem] flex items-center justify-center h-[3.1875rem]"
+              className="w-[10rem] flex items-center justify-center h-[3.1875rem] rounded-md"
               style={{ backgroundColor: "#000000" }}
             >
               <img
