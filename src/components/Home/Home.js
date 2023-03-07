@@ -9,17 +9,17 @@ import Luxury from "../Luxury";
 import Overview from "../Overview";
 import Slick from "../Slick";
 
-const Home = () => {
+const Home = ({ modalIsOpen, setIsOpen }) => {
   return (
     <div>
-      <Header />
-      <Luxury />
-      <Overview />
-      <About />
-      <Aminities />
-      <Slick />
-      <Brand />
-      <Footer />
+      <Header modalIsOpen={modalIsOpen} setIsOpen={setIsOpen} />
+      <Luxury modalIsOpen={modalIsOpen} setIsOpen={setIsOpen} />
+      <Overview modalIsOpen={modalIsOpen} setIsOpen={setIsOpen} />
+      <About modalIsOpen={modalIsOpen} setIsOpen={setIsOpen} />
+      <Aminities modalIsOpen={modalIsOpen} setIsOpen={setIsOpen} />
+      <Slick modalIsOpen={modalIsOpen} setIsOpen={setIsOpen} />
+      <Brand modalIsOpen={modalIsOpen} setIsOpen={setIsOpen} />
+      <Footer modalIsOpen={modalIsOpen} setIsOpen={setIsOpen} />
     </div>
   );
 };

@@ -5,20 +5,10 @@ import { Routes, Route } from "react-router-dom";
 import Enquire from "./components/Enquire";
 import { useState } from "react";
 let check = true;
-let timeout = function () {};
+let timeout = function () { };
 
-const handle = async (e) => {
-  e.preventDefault();
-  window.gtag("event", "conversion", {
-    send_to: "AW-627427595/07PYCKXE-PgCEIuSl6sC",
-  });
-
-  // let response = await axios.post('https://propsource-mailer.herokuapp.com/', data);
-  window.location.href = "/thank-you";
-  // await axios.post('http://localhost:5000/', data);
-};
 function App() {
-  const [modalIsOpen, setIsOpen] = useState(false);
+  const [modalIsOpen, setIsOpen] = useState(true);
   if (check) {
     openModal();
     check = false;
@@ -32,19 +22,11 @@ function App() {
   function openModal() {
     setIsOpen(true);
   }
-
-  function afterOpenModal() {
-    // references are now sync'd and can be accessed.
-  }
-
-  function closeModal() {
-    setIsOpen(false);
-  }
   return (
     <div>
-      <Enquire handle={handle} setIsOpen={setIsOpen} />
+      <Enquire modalIsOpen={modalIsOpen} setIsOpen={setIsOpen} />
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route exact path="/" element={<Home modalIsOpen={modalIsOpen} setIsOpen={setIsOpen} />} />
         <Route exact path="/enquireform" element={<EnquireForm />} />
       </Routes>
     </div>
