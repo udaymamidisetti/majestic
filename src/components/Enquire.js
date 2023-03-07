@@ -1,17 +1,34 @@
+import { useState } from "react";
+
 function Enquire() {
+  // const [modalIsOpen, setIsOpen] = useState(false);
+  // if (check) {
+  //   openModal();
+  //   check = false;
+  // }
+  // if (!check) {
+  //   setTimeout(() => {
+  //     openModal();
+  //   }, 30000);
+  // }
+
   return (
-    <div className="m-10 p-2 border border-black max-w-[31.625rem] w-full h-[33.625rem] bg-[#ffffff] rounded-md flex justify-center absolute">
+    <div className=" m-10 p-2 border border-black max-w-[31.625rem] w-full h-[33.625rem] bg-[#ffffff] rounded-md flex justify-center fixed left-[30%] top-[8%] z-10">
       <div className="font-poppins">
         <img
           src="https://res.cloudinary.com/drjnmxyd5/image/upload/v1677235318/logo-11_1_sfx0qe.svg"
           className="w-[9rem] h-[3.3125rem] max-md:w-[8rem] max-md:h-[2.9375rem] m-auto mt-[1.03875rem]"
           alt="Logo"
         />
-        <img
-          className="absolute right-[10px] top-[10px]"
-          src="https://res.cloudinary.com/drjnmxyd5/image/upload/v1677506058/Vector_6_jleuvl.svg"
-          alt=""
-        />
+        <button
+          type="button"
+          className="close absolute right-[10px] top-[1px] mr-1"
+          data-dismiss="modal"
+          aria-label="Close"
+          style={{ fontSize: "2rem" }}
+        >
+          <span aria-hidden="true">×</span>
+        </button>
         <h1 className="font-semibold text-[1rem] font-poppins text-center mt-[0.379375rem]">
           Register Here and awail Best Offers !
         </h1>
