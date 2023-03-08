@@ -1,19 +1,12 @@
 import { useState } from "react";
 
 function Enquire({ modalIsOpen, setIsOpen }) {
-  // const [modalIsOpen, setIsOpen] = useState(false);
-  // if (check) {
-  //   openModal();
-  //   check = false;
-  // }
-  // if (!check) {
-  //   setTimeout(() => {
-  //     openModal();
-  //   }, 30000);
-  // }
-
   return (
-    <div className={`${modalIsOpen ? "" : "hidden"} m-10 p-2 border border-black max-w-[31.625rem] w-full h-[33.625rem] bg-[#ffffff] rounded-md flex justify-center fixed left-[30%] top-[8%] z-10`}>
+    <div
+      className={`${
+        modalIsOpen ? "" : "hidden"
+      } m-10 p-2 border border-black max-w-[31.625rem] w-full h-[33.625rem] bg-[#ffffff] rounded-md flex justify-center fixed left-[30%] top-[8%] z-10`}
+    >
       <div className="font-poppins">
         <img
           src="https://res.cloudinary.com/drjnmxyd5/image/upload/v1677235318/logo-11_1_sfx0qe.svg"

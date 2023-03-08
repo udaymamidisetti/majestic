@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 
-const About = () => {
+const About = ({ setIsOpen }) => {
   return (
     <div>
       <div className="container mt-[14.283125rem] w-full lg:h-auto max-w-[62.5rem] mx-auto max-md:mt-[0rem]">
@@ -34,7 +34,12 @@ const About = () => {
                   <td className="text-center border">
                     ₹ 1.14 cr * All Inc. <br />
                     <span>
-                      <button className="w-[8.125rem] h-[2.125rem] bg-[#ffffff] text-[#A58850] text-[1rem] cursor-pointer">
+                      <button
+                        onClick={() => {
+                          setIsOpen(true);
+                        }}
+                        className=" hover:cursor-pointer w-[8.125rem] h-[2.125rem] bg-[#ffffff] text-[#A58850] text-[1rem] cursor-pointer"
+                      >
                         Price BreakUp
                       </button>
                     </span>
@@ -47,7 +52,12 @@ const About = () => {
                     ₹ 1.67Cr * All Inc.
                     <br />
                     <span>
-                      <button className="w-[8.125rem] h-[2.125rem] bg-[#ffffff] text-[#A58850] text-[1rem] cursor-pointer">
+                      <button
+                        onClick={() => {
+                          setIsOpen(true);
+                        }}
+                        className="w-[8.125rem] h-[2.125rem] bg-[#ffffff] text-[#A58850] text-[1rem] cursor-pointer"
+                      >
                         Price BreakUp
                       </button>
                     </span>
@@ -60,7 +70,12 @@ const About = () => {
                 src="https://res.cloudinary.com/drjnmxyd5/image/upload/v1678096007/costing-details_1_scc5fs.svg"
                 alt=""
               />
-              <button className="mt-[1.10875rem] flex items-center justify-center w-[20.4375rem] h-[2.5rem] bg-[#ffffff] text-[#A58850] text-[1rem] cursor-pointer">
+              <button
+                onClick={() => {
+                  setIsOpen(true);
+                }}
+                className="mt-[1.10875rem] flex items-center justify-center w-[20.4375rem] h-[2.5rem] bg-[#ffffff] text-[#A58850] text-[1rem] cursor-pointer"
+              >
                 <p>Download Cost sheet </p>
 
                 <img

@@ -32,12 +32,20 @@ const Header = ({ setIsOpen }) => {
             </button> */}
             <ul className="hidden lg:block p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:border-0 md:bg-white ">
               <div className="flex gap-5">
-                <li onClick={() => {
-                  setIsOpen(true);
-                }} className=" hover:cursor-pointer text-[#000000] font-poppins text-[1.125rem] block py-2 pl-3 pr-4 rounded  md:p-0 ">
+                <li
+                  onClick={() => {
+                    setIsOpen(true);
+                  }}
+                  className=" hover:cursor-pointer text-[#000000] font-poppins text-[1.125rem] block py-2 pl-3 pr-4 rounded  md:p-0 "
+                >
                   Enquire Now
                 </li>
-                <li className="text-[#000000] font-poppins text-[1.125rem] block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">
+                <li
+                  onClick={() => {
+                    setIsOpen(true);
+                  }}
+                  className=" hover:cursor-pointer text-[#000000] font-poppins text-[1.125rem] block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0"
+                >
                   Call Now
                 </li>
               </div>
