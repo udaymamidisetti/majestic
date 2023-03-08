@@ -97,11 +97,20 @@ const Footer = () => {
           </p>
         </div>
         <div className="w-3/6 max-md:w-full">
-          <img
+          <iframe
+            src={"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.78349072176!2d73.76156569999999!3d18.5837973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfc7f674eab5%3A0xff431b074cdeed9e!2s27%20Grand%20Residences!5e0!3m2!1sen!2sin!4v1671823310543!5m2!1sen!2sin "}
+            width="100%"
+            height={"515rem"}
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+          {/* <img
             className=" object-cover w-full  h-[32.1875rem] max-md:h-[9.50625rem]"
             src="https://res.cloudinary.com/drjnmxyd5/image/upload/v1677462849/image_2_eqfihr.png"
             alt=""
-          />
+          /> */}
         </div>
       </div>
     </div>
