@@ -5,9 +5,9 @@ function Enquire({ modalIsOpen, setIsOpen }) {
     <div
       className={`${
         modalIsOpen ? "" : "hidden"
-      } m-10 p-2 border border-black max-w-[31.625rem] w-full h-[33.625rem] bg-[#ffffff] rounded-md flex justify-center fixed left-[30%] top-[8%] z-10`}
+      }  max-md:left-[10%] m-10 p-2 border border-black max-md:max-w-[20.625rem] max-w-[31.625rem] w-full max-md:h-[30.625rem] h-[33.625rem] bg-[#ffffff] rounded-md flex justify-center fixed left-[30%] top-[8%] z-10`}
     >
-      <div className="font-poppins">
+      <div className="font-poppins max-md:left-[10%] max-md:max-w-[15.625rem] max-md:h-[15.625rem]">
         <img
           src="https://res.cloudinary.com/drjnmxyd5/image/upload/v1677235318/logo-11_1_sfx0qe.svg"
           className="w-[9rem] h-[3.3125rem] max-md:w-[8rem] max-md:h-[2.9375rem] m-auto mt-[1.03875rem]"
@@ -24,11 +24,11 @@ function Enquire({ modalIsOpen, setIsOpen }) {
         >
           <span aria-hidden="true">×</span>
         </button>
-        <h1 className="font-semibold text-[1rem] font-poppins text-center mt-[0.379375rem]">
+        <h1 className=" font-semibold text-[1rem] font-poppins text-center mt-[0.379375rem]">
           Register Here and awail Best Offers !
         </h1>
         <input
-          className="mt-[1.113125rem] w-full max-w-[25.0625rem] h-[2.5rem] border-[0.03125rem] border-[#000000] p-[0.625rem] rounded-md"
+          className="  mt-[1.113125rem] w-full max-w-[25.0625rem] h-[2.5rem] border-[0.03125rem] border-[#000000] p-[0.625rem] rounded-md"
           placeholder="Name"
         />{" "}
         <br />
@@ -62,7 +62,7 @@ function Enquire({ modalIsOpen, setIsOpen }) {
           <option></option>
           <option></option>
         </select>
-        <button className="mt-[2rem] w-[19.3125rem] h-[2.5rem] bg-[#A58850] text-[#ffffff] rounded-md">
+        <button className=" mt-[1rem] max-md:w-[15.3125rem] w-[19.3125rem] h-[2.5rem] bg-[#A58850] text-[#ffffff] rounded-md">
           Get Instant Callback
         </button>
       </div>
