@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import axios from "axios";
+import md5 from "md5";
 
 const Luxury = () => {
   const handleSubmit = async (e) => {

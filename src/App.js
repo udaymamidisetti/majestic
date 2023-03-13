@@ -5,8 +5,8 @@ import { Routes, Route } from "react-router-dom";
 import Enquire from "./components/Enquire";
 import { useState } from "react";
 import { toast } from "react-toastify";
+import md5 from "md5";
 
-let check = true;
 
 function App() {
   const [modalIsOpen, setIsOpen] = useState(true);
