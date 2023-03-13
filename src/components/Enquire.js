@@ -10,7 +10,7 @@ function Enquire({ modalIsOpen, setIsOpen }) {
       let url = "https://propsource.project-test.online/";
       formDataObj["project"] = "Majestique Enquiry Form";
       await axios.post(url, formDataObj);
-      console.log(formDataObj, "formDataObj");
+      window.location.href = "/thankyou.html";
     } catch (error) {
     }
   }

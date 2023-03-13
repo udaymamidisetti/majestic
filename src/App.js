@@ -4,19 +4,22 @@ import EnquireForm from "./components/EnquireForm";
 import { Routes, Route } from "react-router-dom";
 import Enquire from "./components/Enquire";
 import { useState } from "react";
+import { toast } from "react-toastify";
+
 let check = true;
-let timeout = function () { };
 
 function App() {
   const [modalIsOpen, setIsOpen] = useState(true);
-  if (check) {
-    openModal();
-    check = false;
-  }
+  let check = localStorage.getItem(md5("majestique")) ? true : false;
   if (!check) {
     setTimeout(() => {
       openModal();
     }, 30000);
+  } else {
+    if (localStorage.getItem(md5("majestique")) == md5("true")) {
+      toast.success("Thanks for your interest !");
+    }
+    localStorage.setItem(md5("majestique"), md5("false"));
   }
 
   function openModal() {
