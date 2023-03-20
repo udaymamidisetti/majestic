@@ -11,14 +11,14 @@ function Enquire({ modalIsOpen, setIsOpen }) {
       formDataObj["project"] = "Majestique Enquiry Form";
       await axios.post(url, formDataObj);
       console.log(formDataObj, "formDataObj");
-    } catch (error) {
-    }
-  }
+    } catch (error) {}
+  };
   return (
     <form onSubmit={handleSubmit}>
       <div
-        className={`${modalIsOpen ? "" : "hidden"
-          } fixed bg-white p-10 z-10 max-sm:left-[10vw] max-sm:right-[10vw] max-sm:h-[65vh] max-sm:top-[15vh] left-[35vw] right-[35vw] top-[10vh] `}
+        className={`${
+          modalIsOpen ? "" : "hidden"
+        } fixed bg-white p-10 z-10 max-sm:left-[10vw] max-sm:right-[10vw] max-sm:h-[68vh] max-sm:top-[15vh] left-[35vw] right-[35vw] top-[10vh] `}
       >
         <div className="font-poppins  max-md:max-w-[15.625rem] max-md:h-[15.625rem] flex-col items-center justify-center">
           <img
@@ -67,7 +67,9 @@ function Enquire({ modalIsOpen, setIsOpen }) {
             className="mt-[1.113125rem] w-full text-[#000000B2] text-[1rem] mt-1 block max-w-[25.0625rem] h-[2.5rem] rounded-md border border-gray-900 bg-white py-2 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
             required
           >
-            <option className="text-[#000000B2]">Apartment Interested In</option>
+            <option className="text-[#000000B2]">
+              Apartment Interested In
+            </option>
             <option value={"1 BHK"}>1 BHK</option>
             <option value={"1 BHK"}>2 BHK</option>
             <option value={"1 BHK"}>3 BHK</option>
@@ -80,9 +82,14 @@ function Enquire({ modalIsOpen, setIsOpen }) {
             <option className="text-[#000000B2]">Purpose Of Enquiry</option>
             <option value="Schedule a Phone Call">Schedule a Phone Call</option>
             <option value="Schedule a Video Call">Schedule a Video Call</option>
-            <option value="Schedule a Site Visit (subject to Govt. laws)">Schedule a Site Visit</option>
+            <option value="Schedule a Site Visit (subject to Govt. laws)">
+              Schedule a Site Visit
+            </option>
           </select>
-          <button type="submit" className=" mt-[1rem] w-full max-sm:w-[15rem] w-[19.3125rem] h-[2.5rem] bg-[#A58850] text-[#ffffff] rounded-md">
+          <button
+            type="submit"
+            className=" mt-[1rem] w-full max-sm:w-[15rem] w-[19.3125rem] h-[2.5rem] bg-[#A58850] text-[#ffffff] rounded-md"
+          >
             Get Instant Callback
           </button>
         </div>
