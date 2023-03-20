@@ -16,16 +16,7 @@ const Footer = () => {
                   alt=""
                 />
                 <p className="font-poppins text-[#ffffff] text-[1rem] font-medium">
-                  +91 9191919191
-                </p>
-              </div>
-              <div className="flex items-center gap-[0.44125rem]">
-                <img
-                  src="https://res.cloudinary.com/drjnmxyd5/image/upload/v1677594845/Group_14_efpred.svg"
-                  alt=""
-                />
-                <p className="font-poppins text-[#ffffff] text-[0.625rem] font-medium">
-                  Abc1241@gmail.com
+                  +91 8669546954
                 </p>
               </div>
             </div>
@@ -35,36 +26,34 @@ const Footer = () => {
                 alt=""
               />
               <div>
-                <p className="font-poppins text-[#ffffff] text-[0.875rem] font-medium">
+                <p className="font-poppins text-[#ffffff] text-[1rem] font-medium">
                   Site Address
                 </p>
-                <p className="font-poppins text-[#ffffff] text-[0.625rem] font-medium">
-                  2972 Westheimer Rd. Santa Ana, Illinois 85486{" "}
+                <p className="font-poppins text-[#ffffff] text-[0.875rem] font-medium">
+                  Site Address Survey no27, Patil Nagar, Balewadi, Pune,
+                  Maharashtra 411054
                 </p>
               </div>
             </div>
-            <div className="flex items-center mt-[0.875rem] gap-[0.44125rem]">
+
+            <div className="flex items-center gap-[0.44125rem] mt-3">
               <img
-                src="https://res.cloudinary.com/drjnmxyd5/image/upload/v1677594928/Group_18_lmrkn4.svg"
+                src="https://res.cloudinary.com/drjnmxyd5/image/upload/v1677594845/Group_14_efpred.svg"
                 alt=""
               />
-              <div>
-                <p className="font-poppins text-[#ffffff] text-[0.875rem] font-medium">
-                  Corporate Address
-                </p>
-                <p className="font-poppins text-[#ffffff] text-[0.625rem] font-medium">
-                  2972 Westheimer Rd. Santa Ana, Illinois 85486{" "}
-                </p>
-              </div>
+              <p className="font-poppins text-[#ffffff] text-[1rem] font-medium">
+                sales@majestique27grand.com
+              </p>
             </div>
+
             <div className="flex items-center mt-[0.875rem] gap-[0.44125rem]">
               <img
                 src="https://res.cloudinary.com/drjnmxyd5/image/upload/v1677463744/Group_18_lpoz7a.png"
                 alt=""
               />
               <div>
-                <p className="font-poppins text-[#ffffff] text-[0.625rem] font-medium">
-                  2972 Westheimer Rd. Santa Ana, Illinois 85486{" "}
+                <p className="font-poppins text-[#ffffff] text-[1rem] font-medium">
+                  RERA No : P52100046049
                 </p>
               </div>
             </div>
@@ -108,11 +97,20 @@ const Footer = () => {
           </p>
         </div>
         <div className="w-3/6 max-md:w-full">
-          <img
+          <iframe
+            src={"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.78349072176!2d73.76156569999999!3d18.5837973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfc7f674eab5%3A0xff431b074cdeed9e!2s27%20Grand%20Residences!5e0!3m2!1sen!2sin!4v1671823310543!5m2!1sen!2sin "}
+            width="100%"
+            height={"515rem"}
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+          {/* <img
             className=" object-cover w-full  h-[32.1875rem] max-md:h-[9.50625rem]"
             src="https://res.cloudinary.com/drjnmxyd5/image/upload/v1677462849/image_2_eqfihr.png"
             alt=""
-          />
+          /> */}
         </div>
       </div>
     </div>

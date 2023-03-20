@@ -8,12 +8,13 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-const Header = () => {
+import Enquire from "./Enquire";
+const Header = ({ setIsOpen }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
   return (
     <div className="h-[4.375rem]">
-      <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+      <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded">
         <div className="container flex flex-wrap items-center justify-between m-auto">
           <a href="/" className="flex items-center">
             <img
@@ -29,14 +30,22 @@ const Header = () => {
             >
               Get started
             </button> */}
-            <ul className="hidden lg:block p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul className="hidden lg:block p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:border-0 md:bg-white ">
               <div className="flex gap-5">
-                <Link to="/enquireform">
-                  <li className="text-[#000000] font-poppins text-[1.125rem] block py-2 pl-3 pr-4 rounded  md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                    Enquire Now
-                  </li>
-                </Link>
-                <li className="text-[#000000] font-poppins text-[1.125rem] block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                <li
+                  onClick={() => {
+                    setIsOpen(true);
+                  }}
+                  className=" hover:cursor-pointer text-[#000000] font-poppins text-[1.125rem] block py-2 pl-3 pr-4 rounded  md:p-0 "
+                >
+                  Enquire Now
+                </li>
+                <li
+                  onClick={() => {
+                    setIsOpen(true);
+                  }}
+                  className=" hover:cursor-pointer text-[#000000] font-poppins text-[1.125rem] block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0"
+                >
                   Call Now
                 </li>
               </div>
@@ -46,7 +55,7 @@ const Header = () => {
               onClick={onOpen}
               data-collapse-toggle="navbar-cta"
               type="button"
-              className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
               aria-controls="navbar-cta"
               aria-expanded="false"
             >
@@ -105,11 +114,11 @@ const Header = () => {
             className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
             id="navbar-cta"
           >
-            <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:border-0 md:bg-white ">
               <li>
                 <a
                   href="#"
-                  className="block py-2 pl-3 pr-4 text-[1.125rem] rounded md:bg-transparent md:p-0 dark:text-white"
+                  className="block py-2 pl-3 pr-4 text-[1.125rem] rounded md:bg-transparent md:p-0"
                   aria-current="page"
                 >
                   Overview
@@ -118,7 +127,7 @@ const Header = () => {
               <li>
                 <a
                   href="#"
-                  className="block py-2 pl-3 pr-4 text-[1.125rem] rounded  md:hover:bg-transparent md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  className="block py-2 pl-3 pr-4 text-[1.125rem] rounded  md:hover:bg-transparent md:p-0 "
                 >
                   Aminities
                 </a>
@@ -126,7 +135,7 @@ const Header = () => {
               <li>
                 <a
                   href="#"
-                  className="block py-2 pl-3 pr-4 text-[1.125rem] text-[#000000] rounded md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  className="block py-2 pl-3 pr-4 text-[1.125rem] text-[#000000] rounded md:p-0 "
                 >
                   Cost
                 </a>
@@ -134,7 +143,7 @@ const Header = () => {
               <li>
                 <a
                   href="#"
-                  className="block py-2 pl-3 pr-4 text-[1.125rem]  text-[#000000] rounded md:hover:bg-transparent md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  className="block py-2 pl-3 pr-4 text-[1.125rem]  text-[#000000] rounded md:hover:bg-transparent md:p-0 "
                 >
                   About
                 </a>
@@ -142,7 +151,7 @@ const Header = () => {
               <li>
                 <a
                   href="#"
-                  className="block py-2 pl-3 pr-4 text-[1.125rem]  text-[#000000] rounded md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  className="block py-2 pl-3 pr-4 text-[1.125rem]  text-[#000000] rounded md:p-0 "
                 >
                   Highlights
                 </a>
