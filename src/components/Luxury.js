@@ -66,6 +66,7 @@ const Luxury = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+  let url = `https://api.whatsapp.com/send?phone=+918669546954&text=Hi!%20I'm%20Interested%20In%20${encodeURI("Majestique project enquiry")}%20Project.%20Please%20Share%20Details.`;
   return (
     <div>
       <div className="max-md:hidden">
@@ -80,8 +81,9 @@ const Luxury = () => {
               className="w-[10rem] rounded-md relative left-0 m-auto top-[85%] max-md:left-0 max-md:m-auto"
               style={{ backgroundColor: "#000000" }}
             >
-              <div
+              <a
                 className="w-[10rem] flex items-center justify-center h-[3.1875rem] rounded-md"
+                href={url}
                 style={{ backgroundColor: "#000000" }}
               >
                 <img
@@ -95,7 +97,7 @@ const Luxury = () => {
                 >
                   WhatsApp
                 </p>
-              </div>
+              </a>
             </div>
           </div>
           <div className="bg-cover h-[64.3rem] flex flex-col items-center justify-center w-screen bg-center max-md:h-[40rem]">
