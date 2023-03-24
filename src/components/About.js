@@ -93,7 +93,7 @@ const About = ({ setIsOpen }) => {
         <p className=" mt-[0.99625rem] text-center font-poppins text-[1.125rem] font-medium">
           27 GRAND RESIDENCES- By 27 Grand Residences Builder
         </p>
-        <p className="mt-[0.685rem] text-center font-poppins text-[1.125rem] ">
+        <p className="max-md:w-[90%] max-md:m-auto mt-[0.685rem] text-center font-poppins text-[1.125rem] max-md:text-[12px]">
           MAJESTIQUE 27 GRAND RESIDENCES' Pre-dispatch project presented by
           Majestique Properties situated at Prominent Location of Balewadi Pune.
           Purchasing a property could be one of the main choices of your life,
@@ -104,11 +104,11 @@ const About = ({ setIsOpen }) => {
           Metro will likewise go through Balewadi with metro stations.
         </p>
       </div>
-      <div className="container mt-[0.39625rem] w-full lg:h-auto max-w-[62.5rem] mx-auto">
+      <div className="container mt-[0.39625rem] w-full max-md:w-[90%] lg:h-auto max-w-[62.5rem] mx-auto">
         <h1 className="text-center font-bold text-[2rem] text-[#816A3D] font-poppins">
           USP OF PROJECT
         </h1>
-        <p className="mt-[0.685rem] text-center font-poppins text-[1.125rem] ">
+        <p className="mt-[0.685rem] text-center font-poppins text-[1.125rem] max-md:text-[12px]">
           Balewadi is a fast developing upcoming locality in north west Pune and
           is next to the upcoming localities of Hinjewadi,Baner, Aundh, Pimple
           Saudagar and Aundh. The Rajiv Gandhi Infotech Park and a good number

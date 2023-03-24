@@ -129,7 +129,7 @@ const Header = ({ setIsOpen }) => {
                   href="#"
                   className="block py-2 pl-3 pr-4 text-[1.125rem] rounded  md:hover:bg-transparent md:p-0 "
                 >
-                  Aminities
+                  Costing
                 </a>
               </li>
               <li>
@@ -137,7 +137,7 @@ const Header = ({ setIsOpen }) => {
                   href="#"
                   className="block py-2 pl-3 pr-4 text-[1.125rem] text-[#000000] rounded md:p-0 "
                 >
-                  Cost
+                  About
                 </a>
               </li>
               <li>
@@ -145,7 +145,7 @@ const Header = ({ setIsOpen }) => {
                   href="#"
                   className="block py-2 pl-3 pr-4 text-[1.125rem]  text-[#000000] rounded md:hover:bg-transparent md:p-0 "
                 >
-                  About
+                  Amenities
                 </a>
               </li>
               <li>
@@ -154,6 +154,14 @@ const Header = ({ setIsOpen }) => {
                   className="block py-2 pl-3 pr-4 text-[1.125rem]  text-[#000000] rounded md:p-0 "
                 >
                   Highlights
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="block py-2 pl-3 pr-4 text-[1.125rem]  text-[#000000] rounded md:p-0 "
+                >
+                  Neighborhood
                 </a>
               </li>
             </ul>
