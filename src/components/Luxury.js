@@ -7,6 +7,8 @@ import a2 from "../assets/a2.png";
 import a3 from "../assets/a3.png";
 import a4 from "../assets/a4.png";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import md5 from "md5";
 const Luxury = () => {
   const handleSubmit = async (e) => {
     try {
@@ -344,7 +346,7 @@ const Luxury = () => {
             Get Instant Callback
           </button>
         </div>
-        <div className="bg-[#ffffff] h-[4rem] w-full flex md:hidden fixed bottom-[10%] items-center justify-evenly">
+        <div className="bg-[#ffffff] h-[4rem] w-full flex md:hidden fixed bottom-0 items-center z-50 justify-evenly">
           <Link to="/enquireform">
             <button className="w-[9rem] h-[2.5rem] bg-[#A58850] text-[#ffffff]  block">
               Equire Now
