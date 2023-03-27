@@ -20,9 +20,8 @@ const Luxury = () => {
       await axios.post(url, formDataObj);
       localStorage.setItem(md5("majestique"), md5("true"));
       window.location.href = "/thankyou.html";
-    } catch (error) {
-    }
-  }
+    } catch (error) {}
+  };
   const slides = [
     {
       id: 1,
@@ -66,7 +65,9 @@ const Luxury = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
-  let url = `https://api.whatsapp.com/send?phone=+918669546954&text=Hi!%20I'm%20Interested%20In%20${encodeURI("Majestique project enquiry")}%20Project.%20Please%20Share%20Details.`;
+  let url = `https://api.whatsapp.com/send?phone=+918669546954&text=Hi!%20I'm%20Interested%20In%20${encodeURI(
+    "Majestique project enquiry"
+  )}%20Project.%20Please%20Share%20Details.`;
   return (
     <div>
       <div className="max-md:hidden">
@@ -75,6 +76,64 @@ const Luxury = () => {
             <img
               className="h-[64.3rem] w-screen absolute max-md:h-[40rem]"
               src={a1}
+              alt=""
+            />
+            <div
+              className="w-[10rem] rounded-md relative left-0 m-auto top-[85%] max-md:left-0 max-md:m-auto curser-pointer"
+              style={{ backgroundColor: "#000000" }}
+            >
+              <a
+                className="w-[10rem] flex items-center justify-center h-[3.1875rem] rounded-md"
+                href={url}
+                style={{ backgroundColor: "#000000" }}
+              >
+                <img
+                  className="h-[1.9375rem]"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/768px-WhatsApp.svg.png?20220228223904"
+                  alt=""
+                />
+                <p
+                  className="font-poppins font-bold"
+                  style={{ color: "white" }}
+                >
+                  WhatsApp
+                </p>
+              </a>
+            </div>
+          </div>
+          <div className="bg-cover h-[64.3rem] flex flex-col items-center justify-center w-screen bg-center max-md:h-[40rem] m-auto">
+            <img
+              className="h-[64.3rem] w-screen absolute max-md:h-[40rem]"
+              src={a2}
+              alt=""
+            />
+            <div
+              className="w-[10rem] rounded-md relative left-0 m-auto top-[85%] max-md:left-0 max-md:m-auto"
+              style={{ backgroundColor: "#000000" }}
+            >
+              <a
+                className="w-[10rem] flex items-center justify-center h-[3.1875rem] rounded-md m-auto"
+                href={url}
+                style={{ backgroundColor: "#000000" }}
+              >
+                <img
+                  className="h-[1.9375rem]"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/768px-WhatsApp.svg.png?20220228223904"
+                  alt=""
+                />
+                <p
+                  className="font-poppins font-bold"
+                  style={{ color: "white" }}
+                >
+                  WhatsApp
+                </p>
+              </a>
+            </div>
+          </div>
+          <div className="bg-cover h-[64.3rem] flex flex-col items-center justify-center w-screen bg-center max-md:h-[40rem]">
+            <img
+              className="h-[64.3rem] w-screen absolute max-md:h-[40rem]"
+              src={a3}
               alt=""
             />
             <div
@@ -103,62 +162,6 @@ const Luxury = () => {
           <div className="bg-cover h-[64.3rem] flex flex-col items-center justify-center w-screen bg-center max-md:h-[40rem]">
             <img
               className="h-[64.3rem] w-screen absolute max-md:h-[40rem]"
-              src={a2}
-              alt=""
-            />
-            <div
-              className="w-[10rem] rounded-md relative left-0 m-auto top-[85%] max-md:left-0 max-md:m-auto"
-              style={{ backgroundColor: "#000000" }}
-            >
-              <div
-                className="w-[10rem] flex items-center justify-center h-[3.1875rem] rounded-md"
-                style={{ backgroundColor: "#000000" }}
-              >
-                <img
-                  className="h-[1.9375rem]"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/768px-WhatsApp.svg.png?20220228223904"
-                  alt=""
-                />
-                <p
-                  className="font-poppins font-bold"
-                  style={{ color: "white" }}
-                >
-                  WhatsApp
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="bg-cover h-[64.3rem] flex flex-col items-center justify-center w-screen bg-center max-md:h-[40rem]">
-            <img
-              className="h-[64.3rem] w-screen absolute max-md:h-[40rem]"
-              src={a3}
-              alt=""
-            />
-            <div
-              className="w-[10rem] rounded-md relative left-0 m-auto top-[85%] max-md:left-0 max-md:m-auto"
-              style={{ backgroundColor: "#000000" }}
-            >
-              <div
-                className="w-[10rem] flex items-center justify-center h-[3.1875rem] rounded-md"
-                style={{ backgroundColor: "#000000" }}
-              >
-                <img
-                  className="h-[1.9375rem]"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/768px-WhatsApp.svg.png?20220228223904"
-                  alt=""
-                />
-                <p
-                  className="font-poppins font-bold"
-                  style={{ color: "white" }}
-                >
-                  WhatsApp
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="bg-cover h-[64.3rem] flex flex-col items-center justify-center w-screen bg-center max-md:h-[40rem]">
-            <img
-              className="h-[64.3rem] w-screen absolute max-md:h-[40rem]"
               src={a4}
               alt=""
             />
@@ -166,8 +169,9 @@ const Luxury = () => {
               className="w-[10rem] rounded-md relative left-0 m-auto top-[85%] max-md:left-0 max-md:m-auto"
               style={{ backgroundColor: "#000000" }}
             >
-              <div
+              <a
                 className="w-[10rem] flex items-center justify-center h-[3.1875rem] rounded-md"
+                href={url}
                 style={{ backgroundColor: "#000000" }}
               >
                 <img
@@ -181,7 +185,7 @@ const Luxury = () => {
                 >
                   WhatsApp
                 </p>
-              </div>
+              </a>
             </div>
           </div>
         </Slider>
@@ -198,8 +202,9 @@ const Luxury = () => {
               className="w-[10rem] rounded-md relative left-0 m-auto top-[85%] max-md:left-0 max-md:m-auto"
               style={{ backgroundColor: "#000000" }}
             >
-              <div
+              <a
                 className="w-[10rem] flex items-center justify-center h-[3.1875rem] rounded-md"
+                href={url}
                 style={{ backgroundColor: "#000000" }}
               >
                 <img
@@ -213,7 +218,7 @@ const Luxury = () => {
                 >
                   WhatsApp
                 </p>
-              </div>
+              </a>
             </div>
           </div>
           <div className="bg-cover h-[64.3rem] flex flex-col items-center justify-center w-screen bg-center max-md:h-[40rem]">
@@ -226,8 +231,9 @@ const Luxury = () => {
               className="w-[10rem] rounded-md relative left-0 m-auto top-[85%] max-md:left-0 max-md:m-auto"
               style={{ backgroundColor: "#000000" }}
             >
-              <div
+              <a
                 className="w-[10rem] flex items-center justify-center h-[3.1875rem] rounded-md"
+                href={url}
                 style={{ backgroundColor: "#000000" }}
               >
                 <img
@@ -241,7 +247,7 @@ const Luxury = () => {
                 >
                   WhatsApp
                 </p>
-              </div>
+              </a>
             </div>
           </div>
           <div className="bg-cover h-[64.3rem] flex flex-col items-center justify-center w-screen bg-center max-md:h-[40rem]">
@@ -254,8 +260,9 @@ const Luxury = () => {
               className="w-[10rem] rounded-md relative left-0 m-auto top-[85%] max-md:left-0 max-md:m-auto"
               style={{ backgroundColor: "#000000" }}
             >
-              <div
+              <a
                 className="w-[10rem] flex items-center justify-center h-[3.1875rem] rounded-md"
+                href={url}
                 style={{ backgroundColor: "#000000" }}
               >
                 <img
@@ -269,7 +276,7 @@ const Luxury = () => {
                 >
                   WhatsApp
                 </p>
-              </div>
+              </a>
             </div>
           </div>
           <div className="bg-cover h-[64.3rem] flex flex-col items-center justify-center w-screen bg-center max-md:h-[40rem]">
@@ -282,8 +289,9 @@ const Luxury = () => {
               className="w-[10rem] rounded-md relative left-0 m-auto top-[85%] max-md:left-0 max-md:m-auto"
               style={{ backgroundColor: "#000000" }}
             >
-              <div
+              <a
                 className="w-[10rem] flex items-center justify-center h-[3.1875rem] rounded-md"
+                href={url}
                 style={{ backgroundColor: "#000000" }}
               >
                 <img
@@ -297,13 +305,12 @@ const Luxury = () => {
                 >
                   WhatsApp
                 </p>
-              </div>
+              </a>
             </div>
           </div>
         </Slider>
       </div>
       <form onSubmit={handleSubmit}>
-
         <div className="container h-[13.9375rem] m-auto max-xl:h-[27.5625rem]">
           <div className="gap-[0.625rem] flex justify-center flex-wrap font-poppins mt-[1.625rem]">
             <h1 className="font-semibold text-[1rem] font-poppins md:hidden">
@@ -321,7 +328,7 @@ const Luxury = () => {
               className="w-full max-w-[25.0625rem] h-[2.5rem] border-[0.03125rem] border-[#000000] p-[0.625rem] rounded-md"
               placeholder="Email"
             />
-            <select
+            {/* <select
               id="country"
               name="country"
               autoComplete="country-name"
@@ -342,7 +349,7 @@ const Luxury = () => {
               <option className="text-[#000000B2]">Purpose Of Enquiry</option>
               <option></option>
               <option></option>
-            </select>
+            </select> */}
           </div>
           <button className="w-[19.3125rem] h-[2.5rem] bg-[#A58850] text-[#ffffff] rounded-md m-auto block mt-[2.9375rem]">
             Get Instant Callback

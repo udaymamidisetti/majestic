@@ -7,14 +7,11 @@ import { useState } from "react";
 import { toast } from "react-toastify";
 import md5 from "md5";
 
-
 function App() {
   const [modalIsOpen, setIsOpen] = useState(true);
   let check = localStorage.getItem(md5("majestique")) ? true : false;
   if (!check) {
-    setTimeout(() => {
-      openModal();
-    }, 30000);
+    openModal();
   } else {
     if (localStorage.getItem(md5("majestique")) == md5("true")) {
       toast.success("Thanks for your interest !");
@@ -29,7 +26,11 @@ function App() {
     <div>
       <Enquire modalIsOpen={modalIsOpen} setIsOpen={setIsOpen} />
       <Routes>
-        <Route exact path="/" element={<Home modalIsOpen={modalIsOpen} setIsOpen={setIsOpen} />} />
+        <Route
+          exact
+          path="/"
+          element={<Home modalIsOpen={modalIsOpen} setIsOpen={setIsOpen} />}
+        />
         <Route exact path="/enquireform" element={<EnquireForm />} />
       </Routes>
     </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import {
   Drawer,
   DrawerBody,
@@ -10,8 +10,30 @@ import {
 import { Link } from "react-router-dom";
 import Enquire from "./Enquire";
 const Header = ({ setIsOpen }) => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const { onOpen } = useDisclosure();
+  const [isOpen, setisOpen] = useState(false);
   const btnRef = React.useRef();
+
+  // const aboutRef = useRef(null);
+  // const costRef = useRef(null);
+  // const highlightRef = useRef(null);
+  // const overviewRef = useRef(null);
+  // const amenitiesRef = useRef(null);
+
+  // const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
+
+  // const handleScrollToAbout = () => {
+  //   scrollToRef(aboutRef);
+  //   setisOpen(!isOpen);
+  // };
+  // const handleScrollTocost = () => scrollToRef(costRef);
+  // const handleScrolltoHightlight = () => scrollToRef(highlightRef);
+  // const handleOVerviewRef = () => scrollToRef(overviewRef);
+  // const handleScrolltoAmenities = () => scrollToRef(amenitiesRef);
+
+  const onClose = () => {
+    setisOpen(!isOpen);
+  };
   return (
     <div className="h-[4.375rem]">
       <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded">
@@ -52,7 +74,7 @@ const Header = ({ setIsOpen }) => {
             </ul>
             <button
               ref={btnRef}
-              onClick={onOpen}
+              onClick={onClose}
               data-collapse-toggle="navbar-cta"
               type="button"
               className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
@@ -86,27 +108,52 @@ const Header = ({ setIsOpen }) => {
               <DrawerCloseButton />
 
               <DrawerBody>
-                <p className="mt-[2.3125rem] cursor-pointer h-[2.75rem] font-poppins font-normal text-[1rem] leading-6 border-b-2 flex items-center">
+                <a
+                  href="#costing"
+                  className="cursor-pointer mt-[2.3125rem] cursor-pointer h-[2.75rem] font-poppins font-normal text-[1rem] leading-6 border-b-2 flex items-center"
+                >
                   Cost
-                </p>
-                <p className="cursor-pointer h-[2.75rem] font-poppins font-normal text-[1rem] leading-6  border-b-2 flex items-center">
+                </a>
+                <a
+                  href="#about"
+                  className="cursor-pointer h-[2.75rem] font-poppins font-normal text-[1rem] leading-6  border-b-2 flex items-center"
+                >
                   About
-                </p>
-                <p className="cursor-pointer h-[2.75rem] font-poppins font-normal text-[1rem] leading-6  border-b-2 flex items-center">
+                </a>
+                <a
+                  href="#projecthighlight"
+                  className="cursor-pointer h-[2.75rem] font-poppins font-normal text-[1rem] leading-6  border-b-2 flex items-center"
+                >
                   Highlights
-                </p>
-                <p className="cursor-pointer h-[2.75rem] font-poppins font-normal text-[1rem] leading-6  border-b-2 flex items-center">
+                </a>
+                <a
+                  href="#overview"
+                  className="cursor-pointer h-[2.75rem] font-poppins font-normal text-[1rem] leading-6  border-b-2 flex items-center"
+                >
                   Overview
-                </p>
-                <p className="cursor-pointer h-[2.75rem] font-poppins font-normal text-[1rem] leading-6  border-b-2 flex items-center">
+                </a>
+                <p
+                  onClick={() => {
+                    setIsOpen(true);
+                  }}
+                  className="cursor-pointer h-[2.75rem] font-poppins font-normal text-[1rem] leading-6  border-b-2 flex items-center"
+                >
                   Enquire
                 </p>
-                <p className="cursor-pointer h-[2.75rem] font-poppins font-normal text-[1rem] leading-6  border-b-2 flex items-center">
+                <p
+                  onClick={() => {
+                    setIsOpen(true);
+                  }}
+                  className="cursor-pointer h-[2.75rem] font-poppins font-normal text-[1rem] leading-6  border-b-2 flex items-center"
+                >
                   Call Now
                 </p>
-                <p className="cursor-pointer h-[2.75rem] font-poppins font-normal text-[1rem] leading-6  border-b-2 flex items-center">
+                <a
+                  href="#aminities"
+                  className="cursor-pointer h-[2.75rem] font-poppins font-normal text-[1rem] leading-6  border-b-2 flex items-center"
+                >
                   Aminities
-                </p>
+                </a>
               </DrawerBody>
             </DrawerContent>
           </Drawer>
@@ -117,8 +164,8 @@ const Header = ({ setIsOpen }) => {
             <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:border-0 md:bg-white ">
               <li>
                 <a
-                  href="#"
-                  className="block py-2 pl-3 pr-4 text-[1.125rem] rounded md:bg-transparent md:p-0"
+                  href="#overview"
+                  className="block py-2 pl-3 pr-4 text-[1.125rem] rounded md:bg-transparent md:p-0 cursor-pointer"
                   aria-current="page"
                 >
                   Overview
@@ -126,42 +173,42 @@ const Header = ({ setIsOpen }) => {
               </li>
               <li>
                 <a
-                  href="#"
-                  className="block py-2 pl-3 pr-4 text-[1.125rem] rounded  md:hover:bg-transparent md:p-0 "
+                  href="#costing"
+                  className="block py-2 pl-3 pr-4 text-[1.125rem] rounded  md:hover:bg-transparent md:p-0 cursor-pointer"
                 >
                   Costing
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
-                  className="block py-2 pl-3 pr-4 text-[1.125rem] text-[#000000] rounded md:p-0 "
+                  href="#about"
+                  className="block py-2 pl-3 pr-4 text-[1.125rem] text-[#000000] rounded md:p-0 cursor-pointer"
                 >
                   About
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
-                  className="block py-2 pl-3 pr-4 text-[1.125rem]  text-[#000000] rounded md:hover:bg-transparent md:p-0 "
+                  href="#aminities"
+                  className="block py-2 pl-3 pr-4 text-[1.125rem]  text-[#000000] rounded md:hover:bg-transparent md:p-0 cursor-pointer"
                 >
                   Amenities
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
-                  className="block py-2 pl-3 pr-4 text-[1.125rem]  text-[#000000] rounded md:p-0 "
+                  href="#projecthighlight"
+                  className="block py-2 pl-3 pr-4 text-[1.125rem]  text-[#000000] rounded md:p-0 cursor-pointer"
                 >
                   Highlights
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
-                  className="block py-2 pl-3 pr-4 text-[1.125rem]  text-[#000000] rounded md:p-0 "
+                  href="#neighbourhood"
+                  className="block py-2 pl-3 pr-4 text-[1.125rem]  text-[#000000] rounded md:p-0 cursor-pointer"
                 >
-                  Neighborhood
+                  Neighbourhood
                 </a>
               </li>
             </ul>

@@ -76,7 +76,10 @@ const Brand = () => {
           <p className="font-poppins text-[1rem]">Loreum Ipsum</p>
         </div>
       </div> */}
-      <div className="w-[67rem] container m-auto max-md:w-full">
+      <div
+        className="w-[67rem] container m-auto max-md:w-full"
+        id="neighbourhood"
+      >
         <h1 className="text-center font-bold text-[2rem] text-[#816A3D] font-poppins mb-[0.65125rem] mt-[0.8125rem]">
           NEIGHBOURHOOD
         </h1>

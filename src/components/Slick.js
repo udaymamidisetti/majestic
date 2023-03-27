@@ -64,7 +64,10 @@ const Slick = ({ setIsOpen }) => {
     prevArrow: <SamplePrevArrow />,
   };
   return (
-    <div className="bg-[#A588501A] h-[56.0625rem] max-md:h-[40.8125rem] mt-[8.09625rem]">
+    <div
+      className="bg-[#A588501A] h-[56.0625rem] max-md:h-[40.8125rem] mt-[8.09625rem]"
+      id="projecthighlight"
+    >
       <h1 className="text-center font-semibold font-poppins text-[#816A3D] text-[2rem] pt-[2.56625rem]">
         PROJECT HIGHLIGHT
       </h1>
@@ -126,9 +129,7 @@ const Slick = ({ setIsOpen }) => {
                 alt=""
               />
               <button
-                onClick={() => {
-                  setIsOpen(true);
-                }}
+                onClick={() => {}}
                 className="w-[13.899375rem] h-[2.0725rem] bg-[#ffffff] text-[#000000] font-poppins"
               >
                 Download Brochure Pdf

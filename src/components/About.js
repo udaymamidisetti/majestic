@@ -2,9 +2,10 @@ import React, { useState } from "react";
 
 const About = ({ setIsOpen }) => {
   return (
-    <div>
+    <div id="about">
       <div className="container mt-[14.283125rem] w-full lg:h-auto max-w-[62.5rem] mx-auto max-md:mt-[0rem]">
         <div
+          id="costing"
           className="container w-full max-w-[62.5rem] max-md:h-auto mx-auto bg-[#A58850] bg-cover h-auto pb-[2.4125rem] left-0 right-0 bottom-[-30rem] max-md:bottom-[-9rem]"
           style={{ boxShadow: "8px 8px 22px 0px #00000040" }}
         >

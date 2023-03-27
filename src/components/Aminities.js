@@ -2,10 +2,10 @@ import React from "react";
 
 const Aminities = () => {
   return (
-    <div>
+    <div id="aminities">
       <div>
         <h1 className="mt-[2.27125rem] text-[2rem] font-semibold text-[#816A3D] text-center font-poppins">
-          AMINITIES
+          AMENITIES
         </h1>
         <div className=" w-full flex justify-center items-center gap-[1.625rem] mt-[0.875rem] max-md:flex-col">
           <img
@@ -23,7 +23,7 @@ const Aminities = () => {
               <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
                 Environs For Kid
               </option>
-              <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
+              {/* <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
                 Half Basketball Court
               </option>
               <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
@@ -34,7 +34,7 @@ const Aminities = () => {
               </option>
               <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff]">
                 Skating Rink
-              </option>
+              </option> */}
             </select>
             <select
               id="country"
@@ -43,7 +43,7 @@ const Aminities = () => {
               className="pl-[0.625rem] pr-[0.625rem] w-full text-[#ffffff] text-[1.25rem] font-poppins font-medium mt-1 block max-w-[31.875rem] h-[3.75rem] bg-[#A58850] border-gray-900 py-2 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500"
             >
               <option className="text-[#ffffff]">Environs For Old Age</option>
-              <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
+              {/* <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
                 Grandparents Corner{" "}
               </option>
               <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
@@ -54,7 +54,7 @@ const Aminities = () => {
               </option>
               <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
                 Walking Track
-              </option>
+              </option> */}
             </select>
             <select
               id="country"
@@ -63,7 +63,7 @@ const Aminities = () => {
               className="pl-[0.625rem] pr-[0.625rem] w-full text-[#ffffff] text-[1.25rem] font-poppins font-medium mt-1 block max-w-[31.875rem] h-[3.75rem] bg-[#A58850] border-gray-900 py-2 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500"
             >
               <option className="text-[#ffffff]">Luxury Environs</option>
-              <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
+              {/* <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
                 Party Hall
               </option>
               <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
@@ -74,7 +74,7 @@ const Aminities = () => {
               </option>
               <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
                 Lawn Area
-              </option>
+              </option> */}
             </select>
             <select
               id="country"
@@ -83,7 +83,7 @@ const Aminities = () => {
               className="pl-[0.625rem] pr-[0.625rem] w-full text-[#ffffff] text-[1.25rem] font-poppins font-medium mt-1 block max-w-[31.875rem] h-[3.75rem] bg-[#A58850] border-gray-900 py-2 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500"
             >
               <option className="text-[#ffffff]">Nature Environs</option>
-              <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
+              {/* <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
                 Boardwalk
               </option>
               <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
@@ -94,7 +94,7 @@ const Aminities = () => {
               </option>
               <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border">
                 Boardwalk
-              </option>
+              </option> */}
             </select>
             <select
               id="country"
@@ -103,7 +103,7 @@ const Aminities = () => {
               className="pl-[0.625rem] pr-[0.625rem] w-full text-[#ffffff] text-[1.25rem] font-poppins font-medium mt-1 block max-w-[31.875rem] h-[3.75rem] bg-[#A58850] border-gray-900 py-2 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500"
             >
               <option className="text-[#ffffff]">Overall Environs</option>
-              <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
+              {/* <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
                 Party Hall
               </option>
               <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
@@ -114,7 +114,7 @@ const Aminities = () => {
               </option>
               <option className="text-[#A58850] h-[3.75rem] bg-[#ffffff] border-b-2">
                 Cafe
-              </option>
+              </option> */}
             </select>
           </div>
         </div>
