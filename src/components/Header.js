@@ -10,9 +10,11 @@ import {
 import { Link } from "react-router-dom";
 import Enquire from "./Enquire";
 const Header = ({ setIsOpen }) => {
-  const { onOpen } = useDisclosure();
+  // const { onOpen } = useDisclosure();
   const [isOpen, setisOpen] = useState(false);
   const btnRef = React.useRef();
+
+  const aboutSectionRef = useRef(null);
 
   // const aboutRef = useRef(null);
   // const costRef = useRef(null);
@@ -31,8 +33,13 @@ const Header = ({ setIsOpen }) => {
   // const handleOVerviewRef = () => scrollToRef(overviewRef);
   // const handleScrolltoAmenities = () => scrollToRef(amenitiesRef);
 
-  const onClose = () => {
+  function onClose() {
     setisOpen(!isOpen);
+  }
+  const handleNavItemClick = (sectionId) => {
+    const sectionRef = document.getElementById(sectionId);
+    sectionRef.scrollIntoView({ behavior: "smooth" });
+    setisOpen(false);
   };
   return (
     <div className="h-[4.375rem]">
@@ -109,28 +116,28 @@ const Header = ({ setIsOpen }) => {
 
               <DrawerBody>
                 <a
-                  href="#costing"
+                  onClick={() => handleNavItemClick("overview")}
                   className="cursor-pointer mt-[2.3125rem] cursor-pointer h-[2.75rem] font-poppins font-normal text-[1rem] leading-6 border-b-2 flex items-center"
                 >
-                  Cost
+                  Overview
                 </a>
                 <a
-                  href="#about"
+                  onClick={() => handleNavItemClick("costing")}
+                  className="cursor-pointer h-[2.75rem] font-poppins font-normal text-[1rem] leading-6  border-b-2 flex items-center"
+                >
+                  Costing
+                </a>
+                <a
+                  onClick={() => handleNavItemClick("about")}
                   className="cursor-pointer h-[2.75rem] font-poppins font-normal text-[1rem] leading-6  border-b-2 flex items-center"
                 >
                   About
                 </a>
                 <a
-                  href="#projecthighlight"
+                  onClick={() => handleNavItemClick("aminities")}
                   className="cursor-pointer h-[2.75rem] font-poppins font-normal text-[1rem] leading-6  border-b-2 flex items-center"
                 >
-                  Highlights
-                </a>
-                <a
-                  href="#overview"
-                  className="cursor-pointer h-[2.75rem] font-poppins font-normal text-[1rem] leading-6  border-b-2 flex items-center"
-                >
-                  Overview
+                  Amenities
                 </a>
                 <p
                   onClick={() => {
@@ -149,10 +156,10 @@ const Header = ({ setIsOpen }) => {
                   Call Now
                 </p>
                 <a
-                  href="#aminities"
+                  onClick={() => handleNavItemClick("projecthighlight")}
                   className="cursor-pointer h-[2.75rem] font-poppins font-normal text-[1rem] leading-6  border-b-2 flex items-center"
                 >
-                  Aminities
+                  Highlights
                 </a>
               </DrawerBody>
             </DrawerContent>

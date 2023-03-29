@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 
 const About = ({ setIsOpen }) => {
+  const aboutSectionRef = useRef(null);
   return (
-    <div id="about">
+    <div id="about" ref={aboutSectionRef}>
       <div className="container mt-[14.283125rem] w-full lg:h-auto max-w-[62.5rem] mx-auto max-md:mt-[0rem]">
         <div
           id="costing"
@@ -127,6 +128,19 @@ const About = ({ setIsOpen }) => {
           The metro is developing in the main city of Pune and the next phase
           will cover the areas of Balewadi upto Hinjewadi and be a big boost to
           further development in the area .
+        </p>
+        <h1 className="text-center font-bold text-[2rem] text-[#816A3D] font-poppins">
+          Disclaimer & Privacy
+        </h1>
+        <p className="mt-[0.685rem] text-center font-poppins text-[1.125rem] max-md:text-[12px]">
+          This Website Is Managed By Majestique Realty Authorized Marketing
+          Partner. The content is for information purposes only and does not
+          constitute an offer to avail of any service. Prices mentioned are
+          subject to change without notice and properties mentioned are subject
+          to availability. Images for representation purpose only. We offer
+          additional services like free site visit pick-up drops, documentation,
+          home loan formalities, registration formalities etc. ©2022.All rights
+          reserved.
         </p>
       </div>
     </div>

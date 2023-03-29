@@ -9,7 +9,10 @@ import a4 from "../assets/a4.png";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import md5 from "md5";
-const Luxury = () => {
+const Luxury = ({ setIsOpen }) => {
+  function handleCall() {
+    window.location.href = `tel:${8669546954}`;
+  }
   const handleSubmit = async (e) => {
     try {
       e.preventDefault();
@@ -328,40 +331,37 @@ const Luxury = () => {
               className="w-full max-w-[25.0625rem] h-[2.5rem] border-[0.03125rem] border-[#000000] p-[0.625rem] rounded-md"
               placeholder="Email"
             />
-            {/* <select
-              id="country"
-              name="country"
-              autoComplete="country-name"
-              className="w-full text-[#000000B2] text-[1rem] mt-1 block max-w-[25.0625rem] h-[2.5rem] rounded-md border border-gray-900 bg-white py-2 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+            <select
+              name="Apartment"
+              className="mt-[1.113125rem] w-full text-[#000000B2] text-[1rem] mt-1 block max-w-[25.0625rem] h-[2.5rem] rounded-md border border-gray-900 bg-white py-2 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+              required
             >
               <option className="text-[#000000B2]">
                 Apartment Interested In
               </option>
-              <option></option>
-              <option></option>
+              <option value={"1 BHK"}>2 BHK</option>
+              <option value={"1 BHK"}>3 BHK</option>
             </select>
-            <select
-              id="country"
-              name="country"
-              autoComplete="country-name"
-              className="w-full text-[#000000B2] text-[1rem] mt-1 block max-w-[25.0625rem] h-[2.5rem] rounded-md border border-gray-900 bg-white py-2 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-            >
-              <option className="text-[#000000B2]">Purpose Of Enquiry</option>
-              <option></option>
-              <option></option>
-            </select> */}
           </div>
           <button className="w-[19.3125rem] h-[2.5rem] bg-[#A58850] text-[#ffffff] rounded-md m-auto block mt-[2.9375rem]">
             Get Instant Callback
           </button>
         </div>
         <div className="bg-[#ffffff] h-[4rem] w-full flex md:hidden fixed bottom-0 items-center z-50 justify-evenly">
-          <Link to="/enquireform">
-            <button className="w-[9rem] h-[2.5rem] bg-[#A58850] text-[#ffffff]  block">
+          <Link>
+            <button
+              className="w-[9rem] h-[2.5rem] bg-[#A58850] text-[#ffffff]  block"
+              onClick={() => {
+                setIsOpen(true);
+              }}
+            >
               Equire Now
             </button>
           </Link>
-          <button className="w-[9rem] h-[2.5rem] bg-[#A58850] text-[#ffffff] block">
+          <button
+            className="w-[9rem] h-[2.5rem] bg-[#A58850] text-[#ffffff] block"
+            onClick={handleCall}
+          >
             Call Now
           </button>
         </div>

@@ -13,7 +13,9 @@ function Enquire({ modalIsOpen, setIsOpen }) {
       await axios.post(url, formDataObj);
       localStorage.setItem(md5("majestique"), md5("true"));
       window.location.href = "/thankyou.html";
-    } catch (error) {}
+    } catch (error) {
+      console.log(error);
+    }
   };
   return (
     <form onSubmit={handleSubmit}>
@@ -64,7 +66,7 @@ function Enquire({ modalIsOpen, setIsOpen }) {
             placeholder="Email"
           />{" "}
           <br />
-          {/* <select
+          <select
             name="Apartment"
             className="mt-[1.113125rem] w-full text-[#000000B2] text-[1rem] mt-1 block max-w-[25.0625rem] h-[2.5rem] rounded-md border border-gray-900 bg-white py-2 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
             required
@@ -72,11 +74,10 @@ function Enquire({ modalIsOpen, setIsOpen }) {
             <option className="text-[#000000B2]">
               Apartment Interested In
             </option>
-            <option value={"1 BHK"}>1 BHK</option>
             <option value={"1 BHK"}>2 BHK</option>
             <option value={"1 BHK"}>3 BHK</option>
           </select>
-          <select
+          {/* <select
             name="Enquiry"
             required
             className=" w-full text-[#000000B2] text-[1rem] mt-4 block max-w-[25.0625rem] h-[2.5rem] rounded-md border border-gray-900 bg-white py-2 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
